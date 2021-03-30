@@ -7,7 +7,7 @@ const AnswersList = (props) => {
 		<ul>
 			{props.answers.map((answer, index) => {
 				return (
-                    <AnswerItem answer={answer} key={index}/>
+                    <AnswerItem answer={answer} key={index} onAnswerClick={props.onAnswerClick}/>
                 );
 			})}
 		</ul>
