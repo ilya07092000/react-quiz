@@ -13,3 +13,11 @@
 .active-quiz__item:hover {
     background: rgba(146, 159, 170, 0.397);
 }
+
+.active-quiz__item.error {
+    background: rgba(255, 0, 0, 0.562);
+}
+
+.active-quiz__item.success {
+    background: rgba(11, 173, 92, 0.884);
+}
