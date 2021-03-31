@@ -67,8 +67,8 @@ export default class Quiz extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<p>Quiz</p>
+			<div className="quiz">
+				<p className="title">Ответьте на вопросы</p>
 				<ActiveQuiz
 					answers={this.state.quiz[this.state.activeQuestion].answers}
 					question={this.state.quiz[this.state.activeQuestion].question}

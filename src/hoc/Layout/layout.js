@@ -4,11 +4,9 @@ import './Layout.css';
 class Layout extends React.Component {
     render() {
         return (
-            <div className="layout">
-                <main>
-                    {this.props.children}
-                </main>
-            </div>
+            <main>
+                {this.props.children}
+            </main>
         )
     };
 };

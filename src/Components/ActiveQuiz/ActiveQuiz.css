@@ -1,0 +1,15 @@
+.active-quiz {
+    padding: 30px 60px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+.active-quiz__list {
+    list-style-type: none;
+}
+
+.active-quiz__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

@@ -5,8 +5,13 @@ import AnswersList from './AnswersList/AnswersList';
 const ActiveQuiz = (props) => {
    return (
         <div className="active-quiz">
-            <p>{props.answerNumber} из {props.quizLength}</p>
-            <p>{props.question}</p>
+            <div className="active-quiz__header">
+                <p>
+                    <span>{props.answerNumber}. </span>
+                    {props.question}
+                </p>
+                <p>{props.answerNumber} из {props.quizLength}</p>
+            </div>
 
             <AnswersList 
                 answers={props.answers}

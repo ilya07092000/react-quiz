@@ -1,0 +1,12 @@
+.quiz {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
