@@ -1,0 +1,13 @@
+.finished-quiz__item {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.finished-quiz__item.success {
+    color: green;
+}
+
+.finished-quiz__item.error {
+    color: red;
+}
