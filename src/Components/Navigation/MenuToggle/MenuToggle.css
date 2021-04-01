@@ -1,0 +1,56 @@
+.menu-toggle {
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    top: 30px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-toggle__line {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    transition: transform .2s linear;
+}
+
+.menu-toggle__line::before,
+.menu-toggle__line::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: inherit;
+    left: 0;
+    transition: transform .2s linear, opacity .1s linear;
+}
+
+.menu-toggle__line::before {
+    top: -8px;
+}
+
+.menu-toggle__line::after {
+    bottom: -8px;
+}
+
+.menu-toggle.menu-toggle_open .menu-toggle__line {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.menu-toggle_open .menu-toggle__line::before {
+    opacity: 0;
+}
+
+.menu-toggle.menu-toggle_open .menu-toggle__line::after {
+    bottom: 0;
+    transform: rotate(90deg)
+}
