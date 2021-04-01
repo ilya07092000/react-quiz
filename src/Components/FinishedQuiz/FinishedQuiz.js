@@ -1,5 +1,6 @@
 import React from 'react';
 import './FinishedQuiz.css';
+import Button from "../../Components/UI/Button/Button";
 
 const FinishedQuiz = props => {
     console.log(props.results);
@@ -17,9 +18,9 @@ const FinishedQuiz = props => {
 
             <p>Правильно 4 из 10</p>
 
-            <button onClick={props.onReset}>
-                Reset
-            </button>
+            <Button onClick={props.onReset}>
+                Повторить
+            </Button>
         </div>
     )
 };
